@@ -1,0 +1,17 @@
+@startuml
+actor :Actor: as a
+usecase (Identificarse) as ide
+usecase (Pagar) as pag
+usecase (Elegir mensajero) as elmsg
+usecase (Confirmar) as conf
+usecase (Registrarse) as reg
+usecase (Pagar con tarjeta) as pagtar
+usecase (Pagar con efectivo) as pagef
+a--ide
+a--pag
+a--elmsg
+a--conf
+pagef-->pag
+pagtar-->pag
+reg.>ide:<<extends>>
+@enduml

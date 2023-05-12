@@ -1,0 +1,17 @@
+@startuml
+actor :Usuario: as user
+actor :Administrador: as admin
+usecase (Iniciar sesión) as ins
+usecase (Recuperar contraseña) as rc
+usecase (Modificar contraseña) as mc
+usecase (Cerrar sesión) as cs
+usecase (Registrar usuario) as ru
+usecase (Instalar programa) as ip
+admin--->user
+user--ins
+user--rc
+user--mc
+user--cs
+admin--ru
+admin--ip
+@enduml

@@ -1,0 +1,5 @@
+@startuml
+usecase (Acceder) as a
+usecase (Registrarse) as r
+a.>r:<<extends>>
+@enduml

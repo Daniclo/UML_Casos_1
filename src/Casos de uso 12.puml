@@ -1,0 +1,8 @@
+@startuml
+actor :Ciudadano: as c
+actor :Ciudadano extranjero: as ce
+usecase (Registrar entrada) as re
+usecase (Tomar huellas) as th
+ce-->c
+th.>re:<<extends>>
+@enduml

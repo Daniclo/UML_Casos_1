@@ -1,0 +1,14 @@
+@startuml
+actor :Cliente: as c
+usecase (Meter dinero) as md
+usecase (Pedir azucar) as pa
+usecase (Pedir producto) as pp
+usecase (Cancelar) as ca
+usecase (Devolver dinero) as dd
+c--md
+c--pa
+c--pp
+c--ca
+pp.>dd:<<include>>
+ca.>dd:<<include>>
+@enduml
