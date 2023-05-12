@@ -1,0 +1,4 @@
+@startuml
+:Actor 1: as a1
+:Actor 2: as a2
+@enduml

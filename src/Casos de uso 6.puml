@@ -1,0 +1,10 @@
+@startuml
+actor :Cliente: as a1
+usecase (Confirmar pedido) as conp
+usecase (Cancelar pedido) as canp
+usecase (Devolver cambio) as dc
+a1--conp
+a1--canp
+conp.>dc:<<Include>>
+canp.>dc:<<Include>>
+@enduml

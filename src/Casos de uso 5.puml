@@ -1,0 +1,13 @@
+@startuml
+actor :Cliente: as a1
+actor :Restaurante: as a2
+usecase (Entregar comida) as ec
+rectangle {
+usecase (Mostrar menú) as mm
+usecase (Pedir comida) as pc
+}
+a1--mm
+a2--mm
+a2--ec
+a1--pc
+@enduml

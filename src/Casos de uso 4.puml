@@ -1,0 +1,5 @@
+@startuml
+actor :Actor 1: as a1
+usecase (Mostrar menú) as mm
+a1--mm
+@enduml
